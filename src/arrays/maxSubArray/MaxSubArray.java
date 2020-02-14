@@ -1,4 +1,6 @@
-public class Solution {
+package arrays.maxSubArray;
+
+public class MaxSubArray {
     // https://leetcode.com/problems/maximum-subarray/
     public static void main(String args[]){
 //        System.out.println("hello");
