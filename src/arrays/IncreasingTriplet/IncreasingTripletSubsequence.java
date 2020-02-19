@@ -1,5 +1,6 @@
 package arrays.IncreasingTriplet;
 
+// https://leetcode.com/problems/increasing-triplet-subsequence/
 public class IncreasingTripletSubsequence {
     public static boolean increasingTriplet(int[] nums) {
         int first = Integer.MAX_VALUE, second = Integer.MAX_VALUE;
