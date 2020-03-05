@@ -3,20 +3,18 @@ package hashtable.alienDict;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-public class AlienDictionaryTest {
+public class VerifyingAnAlienDictionaryTest {
 
     @Test
     public void isAlienSorted() {
         // words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
-        Assert.assertTrue(AlienDictionary.isAlienSorted(new String[]{"hello","leetcode"},"hlabcdefgijkmnopqrstuvwxyz"));
+        Assert.assertTrue(VerifyingAnAlienDictionary.isAlienSorted(new String[]{"hello","leetcode"},"hlabcdefgijkmnopqrstuvwxyz"));
     }
 
     @Test
     public void isAlienSortedFalseTest() {
         // words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz"
-        Assert.assertFalse(AlienDictionary.isAlienSorted(new String[]{"word","world","row"},"worldabcefghijkmnpqstuvxyz"));
+        Assert.assertFalse(VerifyingAnAlienDictionary.isAlienSorted(new String[]{"word","world","row"},"worldabcefghijkmnpqstuvxyz"));
     }
 
 }

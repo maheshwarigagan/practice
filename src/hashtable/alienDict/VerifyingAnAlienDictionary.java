@@ -1,6 +1,6 @@
 package hashtable.alienDict;
 
-public class AlienDictionary {
+public class VerifyingAnAlienDictionary {
     public static boolean isAlienSorted(String[] words, String order) {
         int[] dictionary = new int[26];
         for(int i=0;i<26;i++){
