@@ -3,7 +3,7 @@ package dfs.courseschedule;
 import java.util.*;
 
 public class CourseSchedule {
-    public boolean canFinish(int numCourses, int[][] prereqs) {
+    public static boolean canFinish(int numCourses, int[][] prereqs) {
         Map<Integer, List<Integer>> adjList = new HashMap<>();
         for(int[] edge:prereqs){
             List<Integer> list = adjList.getOrDefault(edge[0], new ArrayList<>());
@@ -25,7 +25,7 @@ public class CourseSchedule {
         return true;
     }
 
-    private boolean visit(int currentCourse
+    private static boolean visit(int currentCourse
             , Map<Integer, List<Integer>> graph
             , Set<Integer> path
             , Set<Integer> completed){
